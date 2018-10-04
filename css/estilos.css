@@ -1,9 +1,0 @@
-body{
-  font-family: 'Bree Serif', serif;
-}
-
-.navbar-nav.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-}
