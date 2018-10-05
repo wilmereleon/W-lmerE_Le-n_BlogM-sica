@@ -1,3 +1,10 @@
+body{
+  background-color: #FBFCFC;
+}
+div .redes-sociales nav{
+      background-color: #FDFEFE;
+}
+
 @media screen and (min-width: 400px){
   .row {
   width: 100%;
