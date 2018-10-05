@@ -1,6 +1,14 @@
-@media (min-width: 400px) {
-.row {
-  text-align: center;
-  width: 50%;
+@media screen and (min-width: 400px){
+  .row {
+  width: 100%;
+  display: inline;
+
+  }
+
 }
+@media (min-width: 900px) {
+.row {
+width: 100%;
+display: inline;
+
 }
