@@ -2,13 +2,29 @@
   .row {
   width: 100%;
   display: inline;
-
   }
 
 }
-@media (min-width: 900px) {
+@media screen and (max-width: 300px){
+  .row {
+  width: 100%;
+  display: inline;
+  }
+  .btn{
+    max-width: 2000px;
+    display:inline;
+  }
+
+}
+@media (min-width: 300px) {
 .row {
 width: 100%;
 display: inline;
+
+}
+.btn{
+  max-width: 2000px;
+  display:inline;
+}
 
 }
