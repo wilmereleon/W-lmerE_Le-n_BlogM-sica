@@ -1,0 +1,37 @@
+body{
+
+}
+div .redes-sociales nav{
+      background-color: #FDFEFE;
+}
+
+@media screen and (min-width: 400px){
+  .row {
+  width: 100%;
+  display: inline;
+  }
+
+}
+@media screen and (max-width: 300px){
+  .row {
+  width: 100%;
+  display: inline;
+  }
+  .btn{
+    max-width: 2000px;
+    display:inline;
+  }
+
+}
+@media (min-width: 300px) {
+.row {
+width: 100%;
+display: inline;
+
+}
+.btn{
+  max-width: 2000px;
+  display:inline;
+}
+
+}
