@@ -13,7 +13,7 @@ function validacion() {
     if(comentario.value.length >= 1){
         parrafo.innerHTML = 'Su comentario ha sido enviado.'
     }else{
-        parrafo.innerHTML = 'Inserte comentario mas extenso'
+        parrafo.innerHTML = 'Inserte comentario más extenso'
     }
 }
 
