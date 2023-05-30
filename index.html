@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script src="js\validaciones.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="icon" type="image/png" href="img/minlogo.png">
     <meta name="viewport" content="width:device-width,user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -96,41 +97,16 @@
             <p class="lead text-justify" style="font-size:15px">
               Lionel se mudará al mundo del cine y tengo un proyecto en solitario bajo un alias con música próximamente.
             </p>
+
             <!-- Acá empieza el espacio de trabajo de @Rafael -->
             <h3><em>Gráfico de canciones más reproducidas en Spotify </em><small>2023</small></h3>
             <hr width=700>
-            <p class="lead text-justify" style="font-size:23px">
+            <p class="lead text-justify" style="font-size:15px">
               En la actualidad, los integrantes tienen proyectos independientes; gran parte de su trabajo se encuentra
               en Spotify. A continuación, sus canciones más sonadas en dicha plataforma:
               <div>
                 <canvas id="myChart"></canvas>
               </div>
-              
-              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-              
-              <script>
-                const ctx = document.getElementById('myChart');
-              
-                new Chart(ctx, {
-                  type: 'bar',
-                  data: {
-                    labels: ['Jona Vark', 'Time to Wander', 'Bloom', 'Inside Your Mind', 'The Pipers song'],
-                    datasets: [{
-                      label: '# más sonadas',
-                      data: [5151674, 4395011, 4436784, 3353912, 3105265],
-                      borderWidth: 1
-                    }]
-                  },
-                  options: {
-                    scales: {
-                      y: {
-                        beginAtZero: true
-                      }
-                    }
-                  }
-                });
-              </script>
-                  
             </p>
             <!-- Acá termina el espacio de trabajo de @Rafael -->
 
@@ -213,7 +189,27 @@
       </div>
 
       <footer>
-
+        <script>
+          const ctx = document.getElementById('myChart');
+          new Chart(ctx, {
+            type: 'bar',
+              data: {
+                labels: ['Jona Vark', 'Time to Wander', 'Bloom', 'Inside Your Mind', 'The Pipers song'],
+                datasets: [{
+                label: 'Canciones más sonadas en Spotify',
+                data: [5151674, 4395011, 4436784, 3353912, 3105265],
+                borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                     }
+                }
+              }
+          });
+        </script>
         <div class="container">
             <div class='jumbotron' style="background-color:#D4E6F1">
               <h2 class='text-uppercase welcome-title'>Sigue también</h2>
