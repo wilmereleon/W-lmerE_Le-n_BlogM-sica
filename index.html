@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="js\validaciones.js"></script>
     <link rel="icon" type="image/png" href="img/minlogo.png">
     <meta name="viewport" content="width:device-width,user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -22,7 +23,7 @@
               <div class='jumbotron-text'>Síguenos en nuestras <abbr title='YouTube, Twitter, Instagram y Facebook'>redes sociales</abbr> :</div>
               <div class='redes-sociales' >
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://www.facebook.com/pg/Musik-Welle-244471839572673/about/?ref=page_internal" target="_blank"><img class='img-rounded img-social' src='img/fb.png' style="width:40px"/></a></li>
+                    <li><a href="https://www.facebook.com/pg/Musik-Welle-244471839572673/about/?ref=page_internal" target="_blank"/><img class='img-rounded img-social' src='img/fb.png' style="width:40px"/></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><img class='img-rounded img-social' src='img/ig.png' style="width:40px"/></a></li>
@@ -95,28 +96,27 @@
             <p class="lead text-justify" style="font-size:15px">
               Lionel se mudará al mundo del cine y tengo un proyecto en solitario bajo un alias con música próximamente.
             </p>
-
-            <!-- Acá empieza el espacio de trabajo de @Rafael-->
-            <h3><em>Gráfico de canciones más reproducidas en Spotify</em><small>2023</small></h3>
+            <!-- Acá empieza el espacio de trabajo de @Rafael -->
+            <h3><em>Gráfico de canciones más reproducidas en Spotify </em><small>2023</small></h3>
             <hr width=700>
             <p class="lead text-justify" style="font-size:15px">
-              En la actualidad, los integrantes tiene proyectos independientes; gran parte de su trabajo se encuentra en Spotiy.
-              A continuación, sus canciones más sonadas en dicha plataforma:
-
+              En la actualidad, los integrantes tienen proyectos independientes; gran parte de su trabajo se encuentra
+              en Spotify. A continuación, sus canciones más sonadas en dicha plataforma:
+              
             </p>
-            <!-- Acá termina el espacio de trabajo de @Rafael-->
-            
-            <!-- Acá empieza el espacio de trabajo de @Andrés-->
+            <!-- Acá termina el espacio de trabajo de @Rafael -->
+
+            <!-- Acá empieza el espacio de trabajo de @Andrés -->
             <div class="form-group">
               <span class="glyphicon glyphicon-user"></span>
               <label for="Comentario">Comentario</label>
-              <textarea name="Comentario" rows="8" cols="40" class="form-control"></textarea>
+              <textarea name="Comentario" rows="8" cols="40" class="form-control" id="comment"></textarea>
             </div>
             <div class="form-group">
-              <input type="button" name="boton" value="Enviar" class="btn btn-default"></input>
+              <input type="button" name="boton" value="Enviar" class="btn btn-default" id="sent"></input>
+              <p id="validation"></p>
             </div>
-
-            <!-- Acá termina el espacio de trabajo de @Andrés-->
+            <!-- Acá termina el espacio de trabajo de @Andrés -->
           </div>
             <div class="col-lg-4 col-md-4 col-sm-5 col-xs-4" style="background-color:white;">
               <div class="container" style="background:#E5E7E9; border-radius: 5px 5px 5px 5px;">
@@ -189,7 +189,12 @@
         <div class="container">
             <div class='jumbotron' style="background-color:#D4E6F1">
               <h2 class='text-uppercase welcome-title'>Sigue también</h2>
-                
+                <ul class="nav navbar-nav navbar-center">
+                    <li><a href="cocina.html" target="_blank" style="font-size:15px; color:black;"><abbr><img class='jumbotron-img' src='img/logoC.png'/></abbr></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-center">
+                    <li><a href="turismo.html" target="_blank" style="font-size:15px; color:black;"><abbr><img class='jumbotron-img' src='img/logoT.png'/></abbr></a></li>
+                </ul>
               <div class='row'>
                 <div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 text-right'></div>
                 <div class='col-xs-8 col-sm-8 col-md-8 col-lg-8 text-right'>
