@@ -1,6 +1,11 @@
-body{
-
+.nav{
+  position: center;
 }
+
+.container{
+  border-radius: 5px;
+}
+
 div .redes-sociales nav{
       background-color: #FDFEFE;
 }
