@@ -1,10 +1,51 @@
 div {
-    padding: 10px 10px 10px 10px;
+    padding: 20px 40px 20px 40px;
 }
 
 nav {
     background-color: black;
+    border-radius: 5px;
+    
 }
+ul {
+    position: relative;
+    bottom: 20px;
+}
+
 img {
+    position: relative;
+    bottom: 9px;
     width: 40px;
 }
+
+
+@media screen and (min-width: 400px){
+    div {
+        width: 100%;
+    }
+    
+  
+  }
+
+@media screen and (max-width: 300px){
+    div {
+        width: 100%;
+    }
+    .moreVert{
+        width: 100%;  
+    } 
+}
+
+@media (min-width: 300px) {
+    div {
+        width: 100%;
+    }
+    .moreVert{
+        width: 100%;  
+    }
+}
+  
+ 
+
+
+
