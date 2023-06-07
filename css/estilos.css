@@ -29,14 +29,14 @@ div .redes-sociales nav{
 
 }
 @media (min-width: 300px) {
-.row {
-width: 100%;
-display: inline;
+  .row {
+  width: 100%;
+  display: inline;
 
 }
-.btn{
+  .btn{
   max-width: 2000px;
   display:inline;
-}
+  }
 
 }
