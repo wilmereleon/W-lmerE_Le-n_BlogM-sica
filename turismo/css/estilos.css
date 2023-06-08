@@ -2,7 +2,9 @@ div {
     padding: 20px 40px 20px 40px;
 }
 
-
+body{
+    font:normal 400 "Bree Serif";
+}
 nav {
     background-color: black;
     border-radius: 5px;
@@ -46,26 +48,56 @@ img {
   
  main{
     float: left;
-    width: 80%;
+    width: 75%;
     background-color: rgb(199, 197, 197);
+    padding: 60px;
+    margin: 10px;
+    box-sizing: border-box;
+    
+   
  }
 
 .box1{
     background-color: white;
 }
 
-form{
+
+
+.form{
     background-color: rgb(238, 238, 238);
-    color: black;
-    padding: 15px;
+
 }
 
 .sidebar{
-    float: right;
-    width: 10%;
-    background-color: rgb(199, 197, 197);
+    background-color: white;
+ 
 }
 
+.main1{
+    position: absolute;
+    top: 180px;
+    right: 40px;
+    float: right;
+    width: 20%;
+    background-color: rgb(224, 217, 217);
+    padding: 20px;
+    margin: 20px; 
+    box-sizing: border-box;
+  
+ }
+
+ .main2{
+    position: absolute;
+    top: 480px;
+    right: 40px;
+    float: right;
+    width: 20%;
+    background-color: rgb(224, 217, 217);
+    padding: 20px;
+    margin: 20px; 
+    box-sizing: border-box;
+  
+ }
 
 footer{
     float: left;
