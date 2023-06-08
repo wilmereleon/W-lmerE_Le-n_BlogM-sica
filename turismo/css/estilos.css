@@ -32,9 +32,7 @@ img {
     div {
         width: 100%;
     }
-    .moreVert{
-        width: 100%;  
-    } 
+    
 }
 
 @media (min-width: 300px) {
