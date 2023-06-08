@@ -6,6 +6,11 @@
   border-radius: 5px;
 }
 
+.container{
+  text-align: center;
+  
+}
+
 div .redes-sociales nav{
       background-color: #FDFEFE;
 }
