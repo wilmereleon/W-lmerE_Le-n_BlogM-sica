@@ -2,6 +2,7 @@ div {
     padding: 20px 40px 20px 40px;
 }
 
+
 nav {
     background-color: black;
     border-radius: 5px;
@@ -41,7 +42,35 @@ img {
     }
 }
   
- 
+ main{
+    float: left;
+    width: 80%;
+    background-color: rgb(199, 197, 197);
+ }
+
+.box1{
+    background-color: white;
+}
+
+form{
+    background-color: rgb(238, 238, 238);
+    color: black;
+    padding: 15px;
+}
+
+.sidebar{
+    float: right;
+    width: 10%;
+    background-color: rgb(199, 197, 197);
+}
 
 
-
+footer{
+    float: left;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
