@@ -8,7 +8,10 @@
 
 .container{
   text-align: center;
-  
+}
+
+.row{
+  background-color: black;
 }
 
 div .redes-sociales nav{
