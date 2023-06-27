@@ -6,7 +6,9 @@
     <meta name="viewport" content="width:device-width,user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
     <title>Welle</title>
   </head>
@@ -19,6 +21,13 @@
             <div class='col-xs-4 col-sm-4 col-md-4 col-lg-4 text-right'></div>
     </div>
     </header>
+
+    <style>
+      .carousel-item:hover{
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    </style>
 
     <div class="container">
     <nav class="navbar navbar-default" role="navigation">
@@ -52,93 +61,137 @@
 <!--prueba-->
     <div class="container" style="background-color:black;">
       <section>
-        
         <div class="row" style="background-color:black;">
           <div class="col-lg-8 col-md-8 col-sm-7 col-xs-6" style="background-color:black;">
-            <div id="carouselExampleCaptions" class="carousel slide">
-              <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/gypsythecat.jpg" class="d-block w-100"   alt="...">
-                    <h5 class="card-title" style="color: blue; text-align:center;">Musica</h5>
-                    <p class="card-text" style="text-align: center; color: #fff;">Banda Gypsy & The Cat anuncia su retiro</p>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="card-img-top" src="img/viajeAItalia.jpg" alt="Card image cap">
-                    <div class="card-body" style="background-color: black;">
-                      <h5 class="card-title" style="color: green; text-align: center;">Viajes</h5>
-                      <p class="card-text" style="text-align: center; color: #fff;">Que llevar a un viaje a Italia</p>
-                  </div>
-               
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/gypsythecat.jpg" class="d-block w-100" alt="...">
                   
+                  <h5 class="card-title" style="color: blue; text-align:center;">Musica</h5>
+                    <p class="card-text" style="text-align: center; color: #fff;">Banda Gypsy & The Cat anuncia su retiro</p>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                <div class="carousel-item">
+                  <img src="img/picodegallo.jpg" class="d-block w-100" alt="...">
+                  <h5 class="card-title" style="color: orange; text-align:center;">Cocina</h5>
+                    <p class="card-text" style="text-align: center; color: #fff;">Haga un pico de gallo a su gusto</p>
                 </div>
-              </div> 
-            </br>
-            </br>
-            <div>
-             
-              <sidebar >
-              <div class="card-deck">
-                <div class="card">
-                  <img class="card-img-top" src="cocina/img/1.jpg" alt="Card image cap">
-                  <div class="card-body" style="background-color: black; float: right; ">
-                    <h5 class="card-title" style="color: orange; text-align: left;">Cocina</h5>
-                    <p class="card-text" style="text-align: left; color: #fff;">Te atreves a probar el Hakari; descubre las comidas exoticas de Islandia</p>
-                  </div>
+                <div class="carousel-item">
+                  <img src="img/viajeAItalia.jpg" class="d-block w-100" alt="...">
+                  <h5 class="card-title" style="color: green; text-align: center;">Viajes</h5>
+                  <p class="card-text" style="text-align: center; color: #fff;">Que llevar a un viaje a Italia</p>
+
                 </div>
-                <div class="card">
-                  <img class="card-img-top" src="img/EverythingButTheGirlRegresa.jpeg" alt="Card image cap" >
-                  <div class="card-body" style="background-color: black; ">
-                    <h5 class="card-title" style="color: blue; text-align: left;">Musica</h5>
-                    <p class="card-text" style="text-align: left; color: #fff;">Everything But The Girl regresa con nuevo album despues de 24 años</p>
-                  </div>
-                </div>
-              </sidebar>
-              </div> 
-            </br>
-            </br>
-            <div>
-              
-              <div class="card">
-                <div class="card-body" style="text-align: left;">
-                  <h5 style="color: blue;">Por: Andres Rengifo</h5>
-                  <p style="font-size: 12px; "><img src="img/disco.png" style="float: right;">
-                    Despues de casi 6 años de incertidumbre,</p> 
-                    <p style="font-size: 12px; ">
-                    finalmente las bandas Gypsy & The Cat anuncia </p> 
-                    <p style="font-size: 12px; ">
-                    su retiro debido a las bajas ventas de su segundo
-                     album de estudio </p> 
-                    
-                
               </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <br>
-            <br>  
+            <div class="card">
+              <div class="card-body" style="text-align: left;">
+                <h5 style="color: blue;">Por: Andres Rengifo</h5>
+                <p style="font-size: 12px; ">
+                  Despues de casi 6 años de incertidumbre,</p> <img src="img/disco.png" style="float: right;">
+                  <p style="font-size: 12px; ">
+                  finalmente las bandas Gypsy & The Cat anuncia </p> 
+                  <p style="font-size: 12px; ">
+                  su retiro debido a las bajas ventas de su segundo
+                   album de estudio </p> 
+                  </div>
+              </div> 
+            </br>
+            </br>
+            <div>
+             
+             
+  
+                   
             
-              <div class="card mb-3" >
-                <img src="img/destinos.png">
                 <div class="card-body" style="background-color: black;">
+                  
+                  <div class="card-deck">
+                    <div class="card" style="background: url(img/banderaDeItalia.png); ">
+                      <a href="#">
+                        <img class="card-img-top" src="img/banderaDeCanarias.png" alt="Card image cap" ></a>
+                      <div style= "background-color: rgb(27,27,27, .5); box-sizing: border-box; position: absolute;; bottom: 10px;">
+                        <h5 class="card-title" style="color: red; text-align: left;">1</h5>
+                        <p class="card-text" style="text-align: left; color: #fff;">La italia desconocida                                      </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <a href="#">
+                      <img class="card-img-top" src="img/banderaDeCanarias.png" alt="Card image cap" ></a>
+                      <div style= "background-color: rgb(27,27,27, .5); box-sizing: border-box; position: absolute;; bottom: 10px;">
+                        <h5 class="card-title" style="color:red; text-align: left;">2</h5>
+                        <p class="card-text" style="text-align: left; color: #fff;">Canarias y su legado americano</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <a href="#">
+                      <img class="card-img-top" src="img/banderaNoOficialDeGuyanaFrancesa.png" alt="Card image cap" ></a>
+                      <div style= "background-color: rgb(27,27,27, .5); box-sizing: border-box; position: absolute;; bottom: 10px;">
+                        <h5 class="card-title" style="color: red; text-align: left;">3</h5>
+                        <p class="card-text" style="text-align: left; color: #fff;">La estacion espacial de Surinam</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <a href="#">
+                      <img class="card-img-top" src="img/banderaDeReinoUnido.png" alt="Card image cap"></a>
+                      <div style= "background-color: rgb(27,27,27, .5); box-sizing: border-box; position: absolute;; bottom: 10px;">
+                        <h5 class="card-title" style="color: red; text-align: left;">4</h5>
+                        <p class="card-text" style="text-align: left; color: #fff;">Reino Unido salvaje</p>
+                      </div>
+                    </div>
+                  
+                  
+                          </div>
+                        </div>
+                        
                   <h5 class="card-title"style=" color: green;">Viajes</h5>
-                  <p class="card-text" style="color: #fff;">Destinos del mes en Webelle</p>
+                  <p class="card-text" style="color: #fff;font-size: medium">Destinos del mes en Webelle</p>
                 </div>
               </div>
              
+
+
+              <sidebar >
+                <div class="card-deck">
+                 
+                  <div class="card" style="background: url(cocina/img/1.jpg);"  >
+                    <a href="#">
+                      <img class="card-img-top" src="cocina/img/1.jpg" alt="Card image cap" ></a>
+                    <div style= "background-color: rgb(27,27,27, .5); box-sizing: border-box; position: absolute;; bottom: 10px;">
+                      <h5 class="card-title" style="color: orange; text-align: left;">Cocina</h5>
+                      <p class="card-text" style="text-align: left; color: #fff;">Te atreves a probar el Hakari; descubre las comidas exoticas de Islandia</p>
+                    </div>
+                  </div>
+                  <div>
+                    <br>
+                  <div class="card">
+                    <a href="#">
+                    <img class="card-img-top" src="img/EverythingButTheGirlRegresa.jpeg" alt="Card image cap" ></a>
+                    <div style= "background-color: rgb(27,27,27, .5); box-sizing: border-box; position: absolute;; bottom: 10px;">
+                      <h5 class="card-title" style="color: blue; text-align: left;">Musica</h5>
+                      <p class="card-text" style="text-align: left; color: #fff;">Everything But The Girl regresa con nuevo album despues de 24 años</p>
+                    </div>
+                    </div>
+                </div>
+                  </div>
+                </div> 
+              </br>
+            </div>
+              </br>
+              <div>
+              </sidebar>
+                </div>
+              </div>
+              <br>
+              <br>  
             </div>
             </div>
           </div>
@@ -162,25 +215,26 @@
 <div class="container">
   <section>
     <div class="card-deck">
-      <div class="card">
-        <img class="card-img-top" src="turismo/img/nuevo.jpg" alt="Card image cap">
-        <div class="card-body" style="background-color: black;">
+      <div class="card" style="background: url(turismo/img/nuevo.jpg);">
+        <a href="#">
+        <div style="background-color: rgb(27,27,27, .5); box-sizing: border-box; position: absolute;; bottom: 10px;">
           <h5 class="card-title" style="color: blue; text-align: left;">Musica</h5>
-          <p class="card-text" style="text-align: left; color: #fff;">Nuevos generos o nuevos estilos</p>
+          <p class="card-text" style="text-align: left; color: #fff;">¿Nuevos generos o nuevos estilos?</p>
         </div>
       </div>
-      <div class="card">
-        <img class="card-img-top" src="img/picoDeGalloG.jpeg" alt="Card image cap" >
-        <div class="card-body" style="background-color: black;">
+      <div class="card" style="background: url(cocina/img/4.jpg);">
+        <a href="#">
+        <div style="background-color: rgb(27,27,27, .5); box-sizing: border-box; position: absolute;; bottom: 10px;">
           <h5 class="card-title" style="color: orange; text-align: left;">Cocina</h5>
-          <p class="card-text" style="text-align: left; color: #fff;">Haga un pico de gallo a su gusto</p>
+          <p class="card-text" style="text-align: left; color: #fff;">Delicioso Helado de chocolate para hacer en casa </p>
         </div>
       </div>
       <div class="card">
-        <img class="card-img-top" src="img/Geografia-de-la-India.jpg" alt="Card image cap">
-        <div class="card-body" style="background-color: black;">
+        <a href="#">
+        <img class="card-img-top" src="img/Geografia-de-la-India.jpg" alt="Card image cap"></a>
+        <div style="background-color: rgb(27,27,27, .5); box-sizing: border-box; position: absolute;; bottom: 10px;">
           <h5 class="card-title" style="color: green; text-align: left;">Viajes</h5>
-          <p class="card-text" style="text-align: left; color: #fff;">Que llevar a un viaje a la India</p>
+          <p class="card-text" style="text-align: left; color: #fff; ">Que llevar a un viaje a la India la siguiente temporada</p>
         </div>
       </div>
     </div>
